@@ -33,17 +33,24 @@ namespace ChallengesWithTestsMark8
 
         public long Multiply(long factor1, long factor2)
         {
-            return factor1 * factor2;
+            return (long) factor1 * factor2;
         }
 
         public string GetGreeting(string nameOfPerson)
         {
-            return $"Hello, {nameOfPerson}!";
+            if (nameOfPerson != "")
+            {
+                return $"Hello, {nameOfPerson}!";
+            }
+            else
+            {
+                return "Hello!";
+            }
         }
 
         public string GetHey()
         {
-            return "Hey!";
+            return "HEY!";
         }
     }
 }
